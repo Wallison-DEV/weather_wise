@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./img/background.jpg');
+    background-position: center;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 32px;
+    border-radius: 16px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 70vw;
+}
+
+#formulary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+#city-box {
+    padding: 24px 0;
+}
+
+#input-city {
+    border: none;
+    outline: none;
+    padding: 16px;
+    border-radius: 16px;
+    font-size: 16px;
+    background-color: #7c7c7c2b;
+    color: #fff;
+}
+
+button {
+    background-color: #bbb;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 50%;
+    float: right;
+}
+
+button img {
+    width: 24px;
+    height: 24px;
+}
+
+.resultado {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+#cidade {
+    font-weight: bold;
+}
+
+#temperatura {
+    font-size: 40px;
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.temp {
+    display: flex;
+    gap: 8px;
+}
+
+.dados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 16px;
+}
+
+#caixa-umidade,
+#caixa-vento {
+    font-size: 20px;
+    margin: 8px 0 0;
+}
+
+#clima {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    gap: 4px;
+}
+
+.forecast-container {
+    display: flex;
+    overflow-x: scroll;
+    gap: 16px;
+    padding: 0 0 16px 0;
+    scrollbar-width: thin;
+    scrollbar-color: #ccc transparent
+}
+
+.forecast-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 16px;
+    border-radius: 16px;
+    flex-shrink: 0;
+    min-width: 200px;
+    gap: 8px;
+}
+
+#forecast_description img {
+    margin: 0;
+    padding: 0;
+}
+
+#forecast_description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tempMin {
+    color: rgba(256, 256, 256, 0.3);
+    margin-left: 8px;
+}
+
+img {
+    width: 80px;
+    height: 80px;
+}

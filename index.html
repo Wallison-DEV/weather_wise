@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>WeatherWise</title>
+</head>
+<body>
+    <div class="container">
+        <form id="formulary">
+            <input type="text" id="input-city" name="city" placeholder="Digite o nome da cidade" required>
+            <button type="submit">
+                <img src="./img/procurar.png" alt="">
+            </button>
+        </form>
+        <h3 id="city-box">Resultados para <span id="cidade"></span></h3>
+        <div class="resultado">
+            <div class="temp">
+                <p id="temperatura"><span id="weatherIcon"></span><span id="currentTemperature"></span>°C</p>
+                <div class="dados">
+                    <p id="caixa-umidade">Umidade: <span id="umidade"></span></p>
+                    <p id="caixa-ventos">Ventos: <span id="ventos"></span></p>
+                </div>
+            </div>
+            <div id="clima">
+                <h3>Clima</h3>
+                <div class="dataClima"></div>
+                <span id="descricao"></span>
+            </div>
+        </div>
+        <div class="forecast-container" id="previsao-tempo"></div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
